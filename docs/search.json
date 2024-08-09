@@ -1,16 +1,20 @@
 [
   {
+    "objectID": "modif_homepage.html",
+    "href": "modif_homepage.html",
+    "title": "Générer une page d’acceuil customisée",
+    "section": "",
+    "text": "Modification de la CSS de la page d’accueil (index.qmd =&gt; index.html)\nPour éviter de passer par des id dans la css du site, les modifications sont ici apportées dans index.qmd:\n\nEléments de style récupérés dans le DOM (inspecteur)\nSi présence d’une sidebar dans le website, ajouter l’option sidebar: false dans le yaml de index.qmd.\n\n\n\n\n\n\n\n\nNote\n\n\n\nLes modifications de la css sont adaptées à ce rendu. Elles ne sont pas forcément suffisante pour une autre page d’acceuil. De mêmes il y a des éléments surement inutiles dans certains attributs css (tester donc un nettoyage pour rendre le truc plus digeste).\n\n\nYaml de index.qmd\n---\nsidebar: false\n---\nModification de la css de index.qmd\n&lt;!--\nimage de fond (libre de droit): https://www.pexels.com/fr-fr/\n--&gt;\n&lt;style&gt;\n\nbody {\nbackground-image: url(\"background.jpg\");\n    background-size: cover;\n    background-position: center;\n}\n\n.navbar {\n    width: 100%;\n    max-width: 1200px;\n    height: 60px;\n    margin: 0 auto;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    background-color: rgba(0,0,0,0);\n    color: white;\n    --bs-navbar-toggler-focus-width: 0.05rem;\n}\n\n.nav-item {\ncolor: white\n}\n\n.navbar-dark,\n.navbar[data-bs-theme=dark] {\n  --bs-navbar-color: white;\n  --bs-navbar-hover-color: white;\n  --bs-navbar-disabled-color: rgba(85, 85, 85, 0.75);\n  --bs-navbar-active-color: white;\n  --bs-navbar-brand-color: white;\n  --bs-navbar-brand-hover-color: white;\n  --bs-navbar-toggler-border-color: rgba(200, 200, 200, 0.5);\n  --bs-navbar-toggler-icon-bg: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23545555' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e\")\n}\n\n.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {\n  width:26px;\n  height:26px;\n  color:white;\n  opacity:1\n}\n\n.header {\n    position: relative;\n    padding: 0 2rem;\n    background-color: rgba(0,0,0,0.0.);\n}\n\n\n&lt;/style&gt;",
+    "crumbs": [
+      "Page standard",
+      "Générer une page d'acceuil customisée"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "TEST HOMEPAGE",
-    "section": "",
-    "text": "BLABLABLA"
+    "text": "Aller dans générer une page d’accueil customiser (lien sidebar) pour l’explication de la démarche\nAbout this site\n\n1 + 1\n\n[1] 2"
   }
 ]

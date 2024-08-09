@@ -2,6 +2,9 @@
 title: "About"
 ---
 
+**Aller dans générer une page d'accueil customiser (lien sidebar) pour l'explication de la démarche**
+
+
 About this site
 
 ```{r}

@@ -3,20 +3,21 @@ project:
   output-dir: docs
 
 website:
-  title: "TEST HOMEPAGE"
+  title: "CUSTOM HOMEPAGE QUARTO"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
+      - href: about.qmd
+        text: Page standard
+      - url: "https://github.com/mthevenin/test_homepage"
+        text: Dépôt github
   sidebar:
     contents: 
-      - text: Test sidebar 
-      - href: x.qmd
-
+      - text: "Modification de la homepage"
+      - href: modif_homepage.qmd
 format:
   html:
+    theme:
+      light: [simplex, style.scss]
     css: styles.css
     toc: true
 

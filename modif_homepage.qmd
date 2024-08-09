@@ -1,15 +1,36 @@
 ---
-# cache la sidebar dans la page d'accueil
-sidebar: false
+title: "Générer une page d'acceuil customisée"
 ---
 
-```{=html}
+* Modification de la CSS de la page d'accueil (index.qmd => index.html)
+* Pour éviter de passer par des id dans la css du site, les modifications sont ici apportées dans index.qmd:
+  * Eléments de style récupérés dans le DOM (inspecteur)
+  * Si présence d'une sidebar dans le website, ajouter l'option `sidebar: false` dans le yaml de index.qmd.
+
+
+::: callout-note
+Les modifications de la css sont adaptées à ce rendu. Elles ne sont pas forcément suffisante pour une autre page d'acceuil. De mêmes il y a des éléments surement inutiles dans certains attributs css (tester donc un nettoyage pour rendre le truc plus digeste).
+:::
+
+**Yaml de index.qmd**
+
+```{.yaml}
+---
+sidebar: false
+---
+```
+
+
+
+**Modification de la css de index.qmd**
+
+```{.html}
 <!--
-https://www.pexels.com/fr-fr/
+image de fond (libre de droit): https://www.pexels.com/fr-fr/
 -->
 <style>
+
 body {
-/*background-color: red*/
 background-image: url("background.jpg");
     background-size: cover;
     background-position: center;
@@ -22,7 +43,6 @@ background-image: url("background.jpg");
     margin: 0 auto;
     display: flex;
     align-items: center;
-    border: 0;
     justify-content: space-between;
     background-color: rgba(0,0,0,0);
     color: white;
