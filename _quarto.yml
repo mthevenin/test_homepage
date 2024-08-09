@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "TEST HOMEPAGE"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+  sidebar:
+    contents: 
+      - text: Test sidebar 
+      - href: x.qmd
+
+format:
+  html:
+    css: styles.css
+    toc: true
+
+
+
