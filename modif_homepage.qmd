@@ -9,7 +9,7 @@ title: "Générer une page d'acceuil customisée"
 
 
 ::: callout-note
-Les modifications de la css sont adaptées à ce rendu. Elles ne sont pas forcément suffisantes pour une autre page d'acceuil. De mêmes il y a des éléments surement inutiles dans certains attributs css (tester donc un nettoyage pour rendre le bidule plus digeste).
+Les modifications de la css sont adaptées à ce rendu. Elles ne sont pas forcément suffisantes pour une autre page d'acceuil. De mêmes il y a des éléments surement inutiles dans certains attributs css (tester donc un nettoyage pour rendre le bidule plus digeste).... et ce n'est pas encore super polish
 :::
 
 **Yaml de index.qmd**
@@ -29,7 +29,6 @@ sidebar: false
 image de fond (libre de droit): https://www.pexels.com/fr-fr/
 -->
 <style>
-
 body {
 background-image: url("background.jpg");
     background-size: cover;
@@ -43,6 +42,7 @@ background-image: url("background.jpg");
     margin: 0 auto;
     display: flex;
     align-items: center;
+    border: 0;
     justify-content: space-between;
     background-color: rgba(0,0,0,0);
     color: white;
@@ -57,13 +57,26 @@ color: white
 .navbar[data-bs-theme=dark] {
   --bs-navbar-color: white;
   --bs-navbar-hover-color: white;
-  --bs-navbar-disabled-color: rgba(85, 85, 85, 0.75);
+  --bs-navbar-disabled-color: rgba(85, 85, 85, 0.5);
   --bs-navbar-active-color: white;
   --bs-navbar-brand-color: white;
-  --bs-navbar-brand-hover-color: white;
+  --bs-navbar-brand-hover-color: #d1d1d1;
   --bs-navbar-toggler-border-color: rgba(200, 200, 200, 0.5);
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23545555' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23545555' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
+.navbar-toggler-icon {
+  display:inline-block;
+  width:1.5em;
+  height:1.5em;
+  vertical-align:middle;
+  background-image:var(--bs-navbar-toggler-icon-bg);
+  background-color: rgba(255,255,255,0.1);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:100%;
+}
+
 
 .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
   width:26px;
