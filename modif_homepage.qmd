@@ -9,7 +9,7 @@ title: "Générer une page d'acceuil customisée"
 
 
 ::: callout-note
-Les modifications de la css sont adaptées à ce rendu. Elles ne sont pas forcément suffisante pour une autre page d'acceuil. De mêmes il y a des éléments surement inutiles dans certains attributs css (tester donc un nettoyage pour rendre le truc plus digeste).
+Les modifications de la css sont adaptées à ce rendu. Elles ne sont pas forcément suffisantes pour une autre page d'acceuil. De mêmes il y a des éléments surement inutiles dans certains attributs css (tester donc un nettoyage pour rendre le bidule plus digeste).
 :::
 
 **Yaml de index.qmd**
